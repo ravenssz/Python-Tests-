@@ -1,0 +1,12 @@
+import unittest
+from should_dsl import should
+from carta import Baralho
+import string
+
+class BaralhoSpec(unittest.TestCase):
+    def it_creates_a_baralho_object(self):
+        baralho = Baralho([])
+        lista=[]
+        for x in range(52):
+            lista.append("carta"+str(x))
+        Baralho.listabaralho |should| equal_to(lista)

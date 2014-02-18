@@ -1,0 +1,43 @@
+import Math
+
+class Carta:
+    
+    def __init__(self, carta, naipe):
+        self.carta = carta
+        self.naipe = naipe
+
+class Baralho:
+
+    def __init__(self, carta, listadecartas = []):
+        self.listadecartas = listadecartas
+        self. carta = carta
+        self.listadecartas.append(carta)
+     
+class Jogador:
+
+    def __init__(self, baralho, cartasjogador = []):
+        self.cartasjogador = cartasjogador
+
+class Jogo:
+
+    def __init__(self, carta, baralho, jogador):   
+        self.carta
+        self.baralho
+        self.jogador
+
+
+    def embaralhar(self):
+        randon.shuffer(baralho)
+        
+    def recebercartas(self):
+        for x in range(52, 0):
+            if self.baralho.listadecartas != 0:
+                self.jogador.cartasjogador.append(self.baralho.listadecartas)
+                self.baralho.listadecartas[x] = 0
+   
+            if len(self.baralho.listadecartas) == 11:
+                break;
+
+
+
+                            
