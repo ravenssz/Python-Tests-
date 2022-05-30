@@ -21,6 +21,6 @@ controle = 1
 while controle != 0:
 	hora = input("Digite a hora a ser convertida: ")
 	minuto = input("Digite o minuto: ")
-	print "Convertido: %i:%i"%(converter_hora(hora),minuto)
-	controle = input("Continuar? 1(sim)/0(nao): ")
+	print ("Convertido: %i:%i"%(converter_hora(hora),minuto))
+	controle = int(input("Continuar? 1(sim)/0(nao): ")
 print("Obrigado até mais")
